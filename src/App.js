@@ -10,6 +10,7 @@ import Home from "./components/Home/Home.js"
 function App() {
   return (
     <>
+      
       <Router>
         <Routes/>
       </Router>
