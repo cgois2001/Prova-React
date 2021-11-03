@@ -1,10 +1,11 @@
 import React from 'react'
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
-import CartImg from '../../assets/images/cart.jpg'
-import Template2 from '../../assets/images/template2.jpg'
-import Dashboard from '../../assets/images/dashboard.jpg'
-import Desk from '../../assets/images/desk.jpg'
+import { Link } from 'react-router-dom'
+import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
+import CartImg from '../assets/images/cart.jpg'
+import Template2 from '../assets/images/template2.jpg'
+import Dashboard from '../assets/images/dashboard.jpg'
+import Desk from '../assets/images/desk.jpg'
 
 export default () => {
     return (
@@ -15,7 +16,7 @@ export default () => {
                     <div class="container-fluid content-top-gap">
                         <nav aria-label="breadcrumb" class="mb-4">
                             <ol class="breadcrumb my-breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><Link to="/">Home</Link></li>
                                 <li class="breadcrumb-item"><a href="#">Elements</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Cards</li>
                             </ol>

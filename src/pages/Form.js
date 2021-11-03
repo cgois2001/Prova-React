@@ -1,16 +1,23 @@
 import React from "react";
+import {Link} from 'react-router-dom'
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
+
 
 export default () => {
     return (
         <>
             <section>
+
+                <Header/>
+
                 <div class="main-content">
 
                     <div class="container-fluid content-top-gap">
 
                         <nav aria-label="breadcrumb" class="mb-4">
                             <ol class="breadcrumb my-breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><Link to="/">Home</Link></li>
                                 <li class="breadcrumb-item active" aria-current="page">Forms</li>
                             </ol>
                         </nav>
@@ -96,6 +103,7 @@ export default () => {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </>
     )
 }

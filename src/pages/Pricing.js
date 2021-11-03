@@ -1,6 +1,7 @@
 import React from "react";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
 
 export default () => {
     return (
@@ -15,7 +16,7 @@ export default () => {
 
                         <nav aria-label="breadcrumb" class="mb-4">
                             <ol class="breadcrumb my-breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><Link to="/">Home</Link></li>
                                 <li class="breadcrumb-item active" aria-current="page">Pricing Tables</li>
                             </ol>
                         </nav>
