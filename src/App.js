@@ -4,13 +4,12 @@ import {
 import { Routes } from './routes'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Header from "../src/components/Header/header.js"
+import Home from "./components/Home/Home.js"
 
 
 function App() {
   return (
     <>
-      <Header/>
       <Router>
         <Routes/>
       </Router>
