@@ -1,4 +1,16 @@
-import React from "react";
+import React, { useState } from "react"
+
+function toggleMenu() {
+    let body = document.querySelector("body");
+    let hasCollapsed = body.classList.contains("sidebar-menu-collapsed");
+    if (hasCollapsed) {
+        body.classList.remove("sidebar-menu-collapsed");
+        body.classList.add("noscroll");
+    } else {
+        body.classList.remove("noscroll");
+        body.classList.add("sidebar-menu-collapsed");
+    };
+}
 
 export default () => {
     return (
@@ -8,16 +20,6 @@ export default () => {
 
                     <div class="logo">
                         <h1><a href="index.html">Collective</a></h1>
-                    </div>
-
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="image-path" alt="Your logo" title="Your logo" class="img-fluid" style="height:35px;" />
-                        </a>
-                    </div>
-
-                    <div class="logo-icon text-center">
-                        <a href="index.html" title="logo"><img src="assets/images/logo.png" alt="logo-icon" /> </a>
                     </div>
 
                     <div class="sidebar-menu-inner">
@@ -30,7 +32,7 @@ export default () => {
                             <li><a href="blocks.html"><i class="fa fa-th"></i> <span>Content blocks</span></a></li>
                             <li><a href="forms.html"><i class="fa fa-file-text"></i> <span>Forms</span></a></li>
                         </ul>
-                        <a class="toggle-btn" onclick="toggleMenu()">
+                        <a class="toggle-btn" onclick={() => {toggleMenu()}}>
                             <i class="fa fa-angle-double-left menu-collapsed__left"><span>Collapse Sidebar</span></i>
                             <i class="fa fa-angle-double-right menu-collapsed__right"></i>
                         </a>
@@ -52,7 +54,7 @@ export default () => {
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true"
                                             aria-expanded="false">
                                             <div class="profile_img">
-                                                <img src="assets/images/profileimg.jpg" class="rounded-circle" alt="" />
+                                                <img src=' ' class="rounded-circle" alt="" />
                                                 <div class="user-active">
                                                     <span></span>
                                                 </div>
